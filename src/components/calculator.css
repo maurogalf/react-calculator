@@ -1,0 +1,50 @@
+.calculatorContainer {
+  width: 50vh;
+  margin: 100px auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+  gap:2px;
+  grid-template-areas: 
+  ". . . ."
+  ". . . ."
+  ". . . ."
+  ". . . ."
+  ". . . ."
+  ". . . .";
+}
+
+.calculatorCurrentValue {
+  border-radius: 8px;
+  text-align: right;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #000000;
+  transition: border-color 0.25s;
+  margin-bottom: 4px;
+}
+
+.calculatorScreen {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #c95a00;
+  transition: border-color 0.25s;
+  margin-bottom: 4px;
+}
+
+.helpers {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
